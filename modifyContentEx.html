@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="heading"><span>Hero</span> Welcome to Fullstack</p>
+    <!-- <h2 id="heading2"> Hii</h2> -->
+    <button onclick="changeInnertext()">Change-innerText</button>
+    <button onclick="changeInnerhtml()">Change-innerHtml</button>
+    <script>
+        function accessText(){
+            var myText=document.getElementById("heading").innerText;
+            // var myText=elem.innerText;
+            console.log(myText);
+            
+        }
+        function changeText(){
+            document.getElementById("heading").innerText="Welcome to Java Script world";
+             document.getElementById("heading2").innerText="Hello Java Script world";
+        }
+        function changeInnertext(){
+            var textData=document.getElementById("heading").innerText;
+            var textHTML=document.getElementById("heading").innerHTML;
+            console.log(textData);
+            console.log(textHTML);
+           document.getElementById("heading").innerText="<h1>Welcome to js world</h1>" 
+        }
+        function changeInnerhtml(){
+             document.getElementById("heading").innerHTML="<h1>welcome to javascript world</h1>"
+        }
+
+    </script>
+</body>
+</html>
